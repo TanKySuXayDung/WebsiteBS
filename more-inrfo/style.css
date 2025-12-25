@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px clamp(16px, 4vw, 60px);
+    gap: 16px;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+  
+}
+/* MENU */
+.menu {
+    display: flex;
+    flex-wrap: wrap;              /* 🔥 TỰ XUỐNG DÒNG */
+    gap: clamp(10px, 2vw, 28px);
+    justify-content: flex-end;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 500;
+}
+.logo img {
+    height: 36px;
+    clip-path: circle();
+}
+
+.logo .blue {
+    color: #275296;
+
+}
+
+.logo .red {
+    color: #BF2026;
+}
+
+
+/* MENU */
+.menu a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #1e90ff;
+}
+
+.btn-primary {
+    background: #1e90ff;
+    color: white !important;
+    padding: 10px 22px;
+    border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("/assets/images/BS-Background.jpg") center/cover no-repeat;
+    position: relative;
+    margin-top: 70px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* căn giữa theo chiều dọc */
+    align-items: center;       /* căn giữa theo chiều ngang */
+
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.hero h1 {
+    font-size: 60Px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #4aa3ff;
+}
+
+.hero p {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.btn-hero {
+    width: fit-content;
+    background: #1e90ff;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* SECTIONS */
+.section {
+    display: flex;
+    align-items: center;
+    padding: 100px 120px;
+    gap: 60px;
+}
+
+.section img {
+    width: 45%;
+    border-radius: 12px;
+}
+
+.section .text {
+    width: 55%;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 80px;
+    background: #1e90ff;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
