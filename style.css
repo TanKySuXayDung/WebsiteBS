@@ -227,7 +227,7 @@ html {
   }
 }
 
-.half-width { max-width: 50%; margin: 5 auto; }
+
 
 .bim {
     color: #BF2026; /* đỏ */
@@ -468,7 +468,7 @@ html {
 
 .section .text,
 .section .half-width {
-  max-width: 800px;    /* giới hạn chiều rộng cho đoạn văn */
+  max-width: 1200px;    /* giới hạn chiều rộng cho đoạn văn */
   margin: 0 auto;      /* căn giữa đoạn văn */
 }
 
@@ -540,8 +540,9 @@ html {
   color: #555;
 }
  /*dichvu */
- .services-section {
-  max-width: 1000px;
+ 
+ .services-section {  
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
@@ -575,9 +576,15 @@ html {
 .carousel-page {
   flex: 0 0 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 dịch vụ mỗi trang */
+  grid-template-columns: repeat(4, 1fr); /* 3 dịch vụ mỗi trang */
   gap: 5px;
   padding: 10px;
+}
+
+.carousel-page {
+  min-height: auto;
+  height: auto;
+  align-items: start;
 }
 
 .service-box {
