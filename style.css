@@ -698,6 +698,136 @@ html {
     display: block;
 }
 
+
+/* TEAM */
+
+.team-card-1 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.team-card-1 img {
+  width: 100%;
+  height: 100%;       /* ảnh to hơn */
+  object-fit: cover;
+    display: block;
+}
+
+.team-card-1 h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.team-card-1 p {
+  font-size: 15px;
+  color: #555;
+}
+
+.team-card-2 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.team-card-2 img {
+  width: 100%;
+  height: 100%;       /* ảnh to hơn */
+  object-fit: cover;
+    display: block;
+}
+
+.team-card-2 h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.team-card-2 p {
+  font-size: 15px;
+  color: #555;
+}
+
+
+
+/* Bọc ảnh */
+.team-img-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Giữ style ảnh cũ */
+.team-card-1 img {
+  transition: transform 0.4s ease;
+}
+
+.team-card-2 img {
+  transition: transform 0.4s ease;
+}
+
+
+/* Overlay */
+.team-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.team-overlay h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.team-overlay span {
+  font-size: 14px;
+  color: #00c6ff;
+  margin-bottom: 10px;
+}
+
+.team-overlay p {
+    text-align: left;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #f1f1f1;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Hover effect */
+.team-card-1:hover img {
+  transform: scale(1.08);
+}
+
+.team-card-1:hover .team-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-card-2:hover img {
+  transform: scale(1.08);
+}
+
+.team-card-2:hover .team-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 /*hinh anh noi */
 img {
     transition: 
@@ -713,6 +843,12 @@ img {
 .partner-card img {
     max-width: 100px;
     max-height: 100px;
+}
+
+.partner-page {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
 }
 
 /* contact */
