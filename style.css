@@ -38,8 +38,12 @@ html {
   clip-path: circle();
 }
 
-.logo .blue { color: #275296; }
-.logo .red { color: #BF2026; }
+.logo .blue {
+  color: #275296;
+}
+.logo .red {
+  color: #bf2026;
+}
 
 /* MENU */
 .menu {
@@ -57,7 +61,9 @@ html {
   transition: color 0.3s ease;
 }
 
-.menu a:hover { color: #1e90ff; }
+.menu a:hover {
+  color: #1e90ff;
+}
 
 .btn-primary {
   background: #1e90ff;
@@ -77,7 +83,7 @@ html {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .hero-content {
@@ -97,7 +103,9 @@ html {
   margin-bottom: 20px;
 }
 
-.hero h1 span { color: #4aa3ff; }
+.hero h1 span {
+  color: #4aa3ff;
+}
 
 .hero p {
   font-size: clamp(18px, 3vw, 25px);
@@ -114,50 +122,48 @@ html {
   transition: background 0.3s ease;
 }
 
-.btn-hero:hover { background: #0d6efd; }
+.btn-hero:hover {
+  background: #0d6efd;
+}
 
 /* SECTION ABOUT */
 
 #about .text {
-    max-width: 1200px;
-    margin: 0 auto;         /* khối vẫn ở giữa */
-    padding: 0 32px;
+  max-width: 1200px;
+  margin: 0 auto; /* khối vẫn ở giữa */
+  padding: 0 32px;
 }
 
 #about .half-width {
-    width: 100%;             /* hoặc 100% nếu muốn full */
-    margin-left: 0;         /* dạt trái */
-    margin-right: auto;     /* bỏ căn giữa */
-    text-align: left;       /* chữ căn trái */
+  width: 100%; /* hoặc 100% nếu muốn full */
+  margin-left: 0; /* dạt trái */
+  margin-right: auto; /* bỏ căn giữa */
+  text-align: left; /* chữ căn trái */
 }
 
 #about {
-    font-family: 'Roboto', sans-serif;   /* font chính cho nội dung */
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;                         /* màu chữ dễ đọc */
+  font-family: "Roboto", sans-serif; /* font chính cho nội dung */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333; /* màu chữ dễ đọc */
 }
 
 #about h2 {
-    font-family: 'Montserrat', sans-serif; /* font riêng cho tiêu đề */
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif; /* font riêng cho tiêu đề */
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
-
 
 /* Su menh tam nhin */
 #about .vision-box {
-    max-width: 900px;
-    margin: 56px auto 0;
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 32px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  max-width: 900px;
+  margin: 56px auto 0;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
-
-
-
 
 /* CONTACT */
 .contact {
@@ -172,17 +178,14 @@ html {
   margin-bottom: 10px;
 }
 
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .section {
     flex-direction: column;
     gap: 30px;
   }
-  .section img, .section .text {
+  .section img,
+  .section .text {
     width: 100%;
   }
 }
@@ -221,24 +224,22 @@ html {
     flex-direction: column;
     text-align: center;
   }
-  .section img, .section .text {
+  .section img,
+  .section .text {
     max-width: 100%;
     flex: 1 1 100%;
   }
 }
 
-
-
 .bim {
-    color: #BF2026; /* đỏ */
-    font-weight: 700;
+  color: #bf2026; /* đỏ */
+  font-weight: 700;
 }
 
 .tech {
-    color: #275296; /* xanh */
-    font-weight: 700;
+  color: #275296; /* xanh */
+  font-weight: 700;
 }
-  
 
 .services-grid {
   padding: 40px;
@@ -279,8 +280,6 @@ html {
   line-height: 1.5;
 }
 
-
-
 /* WHY US */
 .why-us-section {
   padding: 40px;
@@ -291,13 +290,13 @@ html {
 /* Container chứa các reason-box */
 .why-us-section .grid-container {
   display: flex;
-  justify-content: center;   /* căn giữa theo chiều ngang */
-  gap: 40px;                 /* khoảng cách giữa các box */
-  flex-wrap: wrap;           /* xuống dòng nếu nhiều box */
+  justify-content: center; /* căn giữa theo chiều ngang */
+  gap: 40px; /* khoảng cách giữa các box */
+  flex-wrap: wrap; /* xuống dòng nếu nhiều box */
 }
 
 .reason-box {
-  max-width: 250px;          /* giới hạn độ rộng mỗi box */
+  max-width: 250px; /* giới hạn độ rộng mỗi box */
 }
 
 .reason-box img {
@@ -309,7 +308,6 @@ html {
   font-size: 20px;
   margin-bottom: 8px;
 }
-
 
 /* PROCESS */
 .process-section {
@@ -344,17 +342,17 @@ html {
   flex: 1;
   max-width: 500px;
   background: #fff;
-  border: 2px solid #007BFF; /* đường bao nổi */
+  border: 2px solid #007bff; /* đường bao nổi */
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   text-align: left;
 }
 
 .step-text h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #007BFF;
+  color: #007bff;
 }
 
 .step-text p {
@@ -363,12 +361,11 @@ html {
 }
 
 .step-image img {
-  width: 120px;   /* ảnh nhỏ gọn */
+  width: 120px; /* ảnh nhỏ gọn */
   height: auto;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 /*PROJECT*/
 .projects-section {
@@ -417,12 +414,12 @@ html {
   border-radius: 10px;
   padding: 12px;
   text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .project-card img {
   width: 100%;
-  height: 220px;       /* ảnh to hơn */
+  height: 220px; /* ảnh to hơn */
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -442,7 +439,7 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #0A66FF;
+  background-color: #0a66ff;
   color: #fff;
   border: none;
   font-size: 22px;
@@ -455,21 +452,23 @@ html {
   place-items: center;
 }
 
-.nav.prev { left: -20px; }
-.nav.next { right: -20px; }
-
-
+.nav.prev {
+  left: -20px;
+}
+.nav.next {
+  right: -20px;
+}
 
 .section {
-  max-width: 1200px;   /* giới hạn chiều rộng tối đa */
-  margin: 0 auto;      /* căn giữa nội dung */
-  padding: 40px 20px;  /* khoảng cách trong */
+  max-width: 1200px; /* giới hạn chiều rộng tối đa */
+  margin: 0 auto; /* căn giữa nội dung */
+  padding: 40px 20px; /* khoảng cách trong */
 }
 
 .section .text,
 .section .half-width {
-  max-width: 1200px;    /* giới hạn chiều rộng cho đoạn văn */
-  margin: 0 auto;      /* căn giữa đoạn văn */
+  max-width: 1200px; /* giới hạn chiều rộng cho đoạn văn */
+  margin: 0 auto; /* căn giữa đoạn văn */
 }
 
 .grid-container {
@@ -480,13 +479,13 @@ html {
 }
 
 .service-box {
-  max-width: 280px;    /* giới hạn chiều rộng mỗi box dịch vụ */
+  max-width: 280px; /* giới hạn chiều rộng mỗi box dịch vụ */
   text-align: center;
 }
 
 .services-grid {
-  max-width: 1200px;      /* giới hạn chiều rộng toàn bộ */
-  margin: 0 auto;         /* căn giữa */
+  max-width: 1200px; /* giới hạn chiều rộng toàn bộ */
+  margin: 0 auto; /* căn giữa */
   padding: 40px 20px;
   text-align: center;
 }
@@ -499,7 +498,7 @@ html {
 .services-grid .intro {
   font-size: 18px;
   margin-bottom: 40px;
-  max-width: 800px;       /* đoạn giới thiệu không quá dài */
+  max-width: 800px; /* đoạn giới thiệu không quá dài */
   margin-left: auto;
   margin-right: auto;
 }
@@ -508,22 +507,22 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* tự co giãn */
   gap: 30px;
-  justify-items: center;  /* căn giữa các box */
+  justify-items: center; /* căn giữa các box */
 }
 
 .service-box {
-  max-width: 280px;       /* mỗi box có độ rộng cố định */
+  max-width: 280px; /* mỗi box có độ rộng cố định */
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .service-box img {
   width: 100%;
-  height: 160px;          /* ảnh vừa phải, không quá to */
+  height: 160px; /* ảnh vừa phải, không quá to */
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -539,9 +538,9 @@ html {
   line-height: 1.6;
   color: #555;
 }
- /*dichvu */
- 
- .services-section {  
+/*dichvu */
+
+.services-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -593,7 +592,7 @@ html {
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .service-box img {
@@ -619,7 +618,7 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #0A66FF;
+  background-color: #0a66ff;
   color: #fff;
   border: none;
   font-size: 22px;
@@ -632,10 +631,13 @@ html {
   place-items: center;
 }
 
-.nav.prev { left: -0px; }
-.nav.next { right: -0px; }
+.nav.prev {
+  left: -0px;
+}
+.nav.next {
+  right: -0px;
+}
 
- 
 .members-container {
   display: flex;
   flex-wrap: wrap;
@@ -672,14 +674,14 @@ html {
 
 /* Nen tang */
 .intro_nentang {
-    font-size: 16px;
-    line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.6;
 
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 .skills-section {
   padding: 40px;
@@ -699,12 +701,11 @@ html {
 
 /* Ảnh fill toàn bộ card */
 .skills-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;          /* ⭐ quan trọng */
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ⭐ quan trọng */
+  display: block;
 }
-
 
 /* TEAM */
 
@@ -713,14 +714,14 @@ html {
   border-radius: 10px;
   padding: 12px;
   text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .team-card-1 img {
   width: 100%;
-  height: 100%;       /* ảnh to hơn */
+  height: 100%; /* ảnh to hơn */
   object-fit: cover;
-    display: block;
+  display: block;
 }
 
 .team-card-1 h3 {
@@ -738,14 +739,14 @@ html {
   border-radius: 10px;
   padding: 12px;
   text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .team-card-2 img {
   width: 100%;
-  height: 100%;       /* ảnh to hơn */
+  height: 100%; /* ảnh to hơn */
   object-fit: cover;
-    display: block;
+  display: block;
 }
 
 .team-card-2 h3 {
@@ -757,8 +758,6 @@ html {
   font-size: 15px;
   color: #555;
 }
-
-
 
 /* Bọc ảnh */
 .team-img-wrap {
@@ -775,7 +774,6 @@ html {
 .team-card-2 img {
   transition: transform 0.4s ease;
 }
-
 
 /* Overlay */
 .team-overlay {
@@ -807,11 +805,11 @@ html {
 }
 
 .team-overlay p {
-    text-align: left;
+  text-align: left;
   font-size: 15px;
   line-height: 1.5;
   color: #f1f1f1;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* Hover effect */
@@ -833,23 +831,19 @@ html {
   transform: translateY(0);
 }
 
-
-
 /*hinh anh noi */
 img {
-    transition: 
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 /* partner */
 .partner-card {
-    padding: 10px;
+  padding: 10px;
 }
 
 .partner-card img {
-    max-width: 100px;
-    max-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .partner-page {
@@ -890,7 +884,7 @@ img {
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 24px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .social-links {
@@ -908,7 +902,7 @@ img {
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 14px;
-  color: #0A66FF;
+  color: #0a66ff;
   text-decoration: none;
 }
 
@@ -936,7 +930,7 @@ img {
 }
 
 .contact-form button {
-  background: #0A66FF;
+  background: #0a66ff;
   color: #fff;
   padding: 12px;
   font-size: 16px;
@@ -955,17 +949,13 @@ img {
   }
 }
 
-
-
 /* Hover trên máy tính */
 img:hover {
-    transform: translateY(-8px) scale(1.04);
-    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
 }
 
 /* Chạm trên mobile */
 img:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
-
-
